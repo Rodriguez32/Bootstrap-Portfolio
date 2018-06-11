@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    
+    <header>
     <nav class="nav bar navbar-expand navba-light bg-light">
 
         <a class="navbar-brand" href="#">Ilda Rodriguez</a>
@@ -39,27 +39,35 @@
             </ul>
         </div>
     </nav>
+</header>
 
-
-
-
-    <div class="mainWidth__container">
-        <div class="mainCard__container">
-            <div class="mainCard__header">
-                <h1>Contact</h1>
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-12"><h1>Contact</h1></div>
             </div>
-            <hr class="mainCard__header__hr">
-            <div class="mainContent__wrapper">
-                    <div class="contact__title">Name</div>
-                    <input type="text" placeholder="John Doe">
-                    <div class="contact__title">Email</div>
-                    <input type="email" placeholder="example@gmail.com">
-                    <div class="contact__title">Message</div>
-                    <textarea name="comment"></textarea>
-                    <input type="submit" value="Submit">
+
+            
+            <form>
+                <div class="form-group">
+                  <label for="formGroupName">Name</label>
+                  <input type="text" class="form-control" id="formName" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupEmail">Email</label>
+                  <input type="text" class="form-control" id="formGroupEmail" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlMessage">Message</label>
+                    <textarea class="form-control" id="exampleFormControlMessage" rows="3"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-sm">Submit</button>
+              </form>
             </div>
         </div>
     </div>
+                        
 
     <footer class="footer">
         <div class="container">
@@ -68,4 +76,4 @@
     </footer>
 </body>
 
-            </html>
+</html>
