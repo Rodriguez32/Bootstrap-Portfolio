@@ -32,7 +32,7 @@
 
 a:visited {
     text-decoration: none;
-    color: #888 !important;
+    color: #888;
 }
 
 a{
@@ -51,7 +51,7 @@ body {
 
 .about__image {
     float: left;
-    height: 150px;
+    height: 85px;
     padding: 0 26px 0 0;
 }
 
@@ -69,6 +69,33 @@ body {
 .button:hover {
     cursor: pointer;
 }
+
+/*   Portfolio   */
+.portfolio__preview {
+    height: 208px;
+    max-width: 282px;
+    float: left;
+    margin: auto;
+    margin-bottom: 56px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+
+.portfolio__link {
+    width: 282px;
+    height: 58px;
+    line-height: 58px;
+    margin-top: 138px;
+    background-color: #4aaaa5;
+    display: block;
+    font-size: 17px;
+    color: white;
+}
+
+
 
 
 /*    Footer   */
@@ -88,3 +115,33 @@ body {
     font-size: 12px;
 }
 
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+    .about__image {
+        float: left;
+        width: 50%;
+        height: auto;
+        padding: 0 26px 0 0;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    .about__image {
+        float: left;
+        padding: 0 26px 0 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .nav__links {
+        position: relative;
+        height: 200px;
+        width: 235px;
+        float: left;
+        margin: 0px 0 57px -12%;
+    }
+
+} 
